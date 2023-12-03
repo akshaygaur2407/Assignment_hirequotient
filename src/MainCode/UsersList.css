@@ -1,0 +1,225 @@
+/* UsersList.css */
+
+.users-list {
+  text-align: center;
+}
+
+.user-table {
+  width: 150%; /* Adjust the width as needed */
+  max-width: 1700px; /* Set a maximum width if necessary */
+  margin: 20px auto; 
+  height: 70vh; /* Adjust the height as needed */
+  overflow-y: auto; 
+}
+
+.user-entry td {
+  border: 0.5px solid #ddd;
+  padding: 12px; /* Adjust the padding for cells */
+}
+
+.table-heading th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f2f2f2;
+}
+
+
+.user-entry.selected {
+  background-color: #cce5ff;
+}
+
+.checkbox-column,
+.id-column,
+.name-column,
+.email-column,
+.role-column,
+.edit-column,
+.delete-button-column {
+  text-align: center;
+}
+
+.pagination-info {
+  margin: 0 10px;
+}
+
+.add-user-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* UsersList.css */
+
+.pagination-container {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Add these styles to your existing CSS file or style block */
+
+/* Add these styles to your existing CSS file or style block */
+
+/* Add these styles to your existing CSS file or style block */
+
+.pagination-button,
+.pagination-number,
+.filter-button,
+.search-icon {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #2b4d4ff9; /* Light black color border */
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination-button:hover,
+.pagination-number:hover,
+.filter-button:hover,
+.search-icon:hover {
+  background-color: #2993b9;
+  color: #000;
+}
+
+.pagination-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.pagination-button.active,
+.pagination-number.active {
+  background-color: #8cc84b;
+  color: #000;
+}
+
+
+
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.search-input {
+  margin-left: 50px;
+  width: 15%; /* Reduce the width of the input */
+  padding: 10px;
+  font-size: 16px;
+}
+
+.filter-dropdown {
+  display: flex; /* Use flex to align items */
+  align-items: center; /* Vertically align items */
+  margin-left: 10px;
+}
+
+.filter-dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  width: 120px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-size: 20px 20px;
+}
+
+.filter-dropdown .dropdown-icon {
+  position: relative;
+  top: 50%;
+  right: 20px;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.filter-dropdown .dropdown-icon:hover {
+  color: #333;
+}
+
+.search-icon {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-icon:hover {
+  background-color: #2980b9;
+}
+
+
+.delete-button-column button {
+  background: none;
+  border: none; 
+  font-size: 20px; /* Adjust font size */
+  cursor: pointer;
+}
+
+/* UsersList.css */
+.delete-button-column button:hover {
+  color: red; /* Change color on hover if needed */
+}
+
+/* Add the following styles to your existing CSS file or style block */
+
+.edit-column button {
+  background-color: #28a745; /* Green color for Save button */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 10px; /* Adjust padding for both vertical and horizontal spacing */
+  margin-right: 5px; /* Adjust margin for spacing between buttons */
+  cursor: pointer;
+  font-size: 15px; /* Adjust font size */
+}
+
+.edit-column button:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+
+.edit-column button.cancel {
+  background-color: #dc3545; /* Red color for Cancel button */
+}
+
+.edit-column button.cancel:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
+/* Add the following styles to your existing CSS file or style block */
+
+.user-entry-editing {
+  width: 200%; /* Make input fields take full width in edited rows */
+  padding: 50px; /* Adjust input padding */
+  font-size: 16px; /* Adjust font size of input fields */
+}
+.selected-rows-info {
+  position: fixed;
+  bottom: 20px;
+  left: 50px;
+  color: #aaaaaaf4; /* Light grey font color */
+  font-size: 15px;
+  display: flex;
+  align-items: center; /* Align text vertically in the center */
+}
